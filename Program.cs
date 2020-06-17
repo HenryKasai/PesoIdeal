@@ -15,7 +15,7 @@ namespace PesoIdeal
             if (!alturabool || altura < 0 || sexo != "F" && sexo != "M")
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Valor inválido.");
+                Console.WriteLine("\nValor inválido.");
                 Console.ResetColor();
                 Environment.Exit(-1);
             }
@@ -25,12 +25,12 @@ namespace PesoIdeal
                 if (sexo == "M")
                 {
                     double resultadomasculino = altura * 72.7 - 58;
-                    Console.WriteLine($"Seu peso ideal é {resultadomasculino:N1} kg."); 
+                    Console.WriteLine($"\nSeu peso ideal é {resultadomasculino:N1} kg."); 
                 }
                 else if (sexo == "F")
                 {
                     double resultadofeminino = altura * 62.1 - 44.7;
-                    Console.WriteLine($"Seu peso ideal é {resultadofeminino:N1} kg.");
+                    Console.WriteLine($"\nSeu peso ideal é {resultadofeminino:N1} kg.");
                 }
                 Console.ResetColor();
             }
